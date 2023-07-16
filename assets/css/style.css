@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* shared style start */
+*{
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --headerBg:rgba(255, 144, 14, 0.10);
+  --text-dark:#131313;
+  --text-gray:#727272;
+  --text-secondary: #424242;
+  --text-orange: #FF900E;
+  --bg-orange: #FF900E;
+  --text-white: #fff;
+}
+.text-center{
+  text-align: center;
+}
+.text-bold{
+  font-weight: 700;
+}
+.bg-white{
+  background-color: var(--text-white);
+}
+.bg-orange{
+  background-color: var(--bg-orange);
+}
+.text-orange{
+  color: var(--text-orange);
+}
+.text-dark{
+  color: var(--text-dark);
+}
+.text-gray{
+  color: var(--text-gray);
+}
+.text-secondary{
+  color: var(--text-secondary);
+}
+.text-white{
+  color: var(--text-white);
+}
+.btn-primary{
+  /* background: var(--bg-orange); */
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px 18px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+/* shared style end */
+
+/* header part start */
+header{
+  background-color: var(--headerBg);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 120px;
+}
+/* nav part start */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li{
+  margin-right: 50px;
+}
+nav ul li a{
+  font-weight: 500;
+  font-size: 1.25rem;
+
+}
+nav h3{
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+/* nav part end */
+
+/* banner part start */
+.banner{
+  
+}
+.banner-text{
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.banner-title{
+  padding-bottom: 15px;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-des{
+  line-height: 23px;
+  font-size: 1rem;
+  padding-bottom: 30px;
+}
+.banner-img{}
+.banner-img img{
+  width: 100%;
+}
+/* banner part end */
+/* header part end */
+
+/* team part start */
+.team{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 120px;
+}
+.team-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.team-title{
+  font-weight: 500;
+  font-size: 45px;
+}
+.team-des{
+  padding: 25px 0;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+/* team part end */
+
+/* feature part start */
+.feature{
+  padding: 50px 120px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.feature-title,
+.feature-des{
+  text-align: center;
+}
+.feature-text-container {
+  padding: 0 60px 0 0;
+}
+.feature-title{
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding-bottom: 15px;
+}
+.feature-des{}
+.feature-card-box{
+  margin-top: 30px;
+}
+.feature-card{
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+
+.feature-img-container{}
+.feature-img-container .ten-badge h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.feature-img-container .ten-badge{
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 35px 50px;
+  width: 220px;
+  bottom: 85px;
+  left: -30px;
+  text-align: center;
+}
+.feature-img-container img{
+  height: 750px;
+}
+/* feature part end */
+
+/* facts part start */
+.facts{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 120px;
+}
+.facts-heading,
+.sponsored-heading{
+  /* max-width: 500px; */
+  padding: 50px;
+}
+.facts-title,
+.sponsored-title
+{
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+}
+.facts-des{}
+
+.facts-card {
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  padding: 20px;
+}
+.facts-card .facts-card-icon{}
+.facts-card .facts-card-count{
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.facts-card .facts-card-des{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.facts-card-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.facts-medium{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+/* facts part end */
+
+/* sponsored part start */
+.sponsored,.footer{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 120px;
+}
+.sponsored-container{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+  
+
+}
+/* sponsored part end */
+
+/* footer part start */
+.footer .footer-text{
+  /* background: red; */
+  padding: 50px 10px;
+  border-radius: 8px;
+  background: #FFF4E7;
+}
+/* footer part end */
